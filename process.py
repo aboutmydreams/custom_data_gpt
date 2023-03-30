@@ -1,7 +1,7 @@
 from pathlib import Path
 from langchain.text_splitter import CharacterTextSplitter
 import faiss
-import os
+import os,sys
 from langchain.vectorstores import FAISS
 from langchain.embeddings import OpenAIEmbeddings
 import pickle
