@@ -120,4 +120,8 @@
 欢迎加入早期的 Custom AI 中文社区
 
 - QQ Group
-![QQ-Group](https://cdn.nlark.com/yuque/0/2023/jpeg/164272/1680242510930-dc0b7da5-053a-4845-8fc1-1fb48b6daeb6.jpeg)
+![QQ-Group]()
+<p>
+  <img alt="QQ-Group" src="https://cdn.nlark.com/yuque/0/2023/jpeg/164272/1680242510930-dc0b7da5-053a-4845-8fc1-1fb48b6daeb6.jpeg" width="300" style="border-radius: 10%;">
+  <img alt="WX-Group" src="https://cdn.nlark.com/yuque/0/2023/png/164272/1680278249286-59ac3cbd-a27b-4c54-87a1-3dd6f9cd46e0.png" width="300" style="border-radius: 10%;">
+</p>
