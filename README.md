@@ -4,12 +4,12 @@
 
 ## 使用步骤
 
-1. 在 .env 文件中添加 API_SECRET=MySecret 和 OPENAI_API_KEY=<your-key>，其中 <your-key> 为你的 OpenAI API key。
+1. 在 .env 文件中添加 `API_SECRET=MySecret` 和 `OPENAI_API_KEY=<your-key>`，其中 `<your-key>` 为你的 OpenAI API key。
 2. 使用 poetry 安装项目所需的依赖，
     - `pip install poetry`
     - `poetry install`
     - `poetry shell`
-3. 启动虚拟环境，运行 python3 main_api.py。
+3. 启动虚拟环境，运行 `python3 main_api.py`。
 4. 使用 HTTP POST 请求向 <http://localhost:5000/train> 发送训练请求，传入训练数据的文件列表和模型名称。
 5. 使用 HTTP POST 请求向 <http://localhost:5000/chat> 发送聊天请求，传入模型名称、问题和历史记录。
 
@@ -74,7 +74,7 @@
 ```json
 {
     "code": 0,
-    ""
+    "msg": "success",
     "data": {
         "answer": " Building a GPT3 chatbot for your company requires a few steps. First, you need to get your OpenAI API key and add it to Secrets as OPENAI_API_KEY. Next, you need to create an API_KEY for the JSON API. After that, you need to fill the training/facts folder with as many text documents as you can containing information about the company you're training it on. Finally, you need to edit the master.txt file to represent how you want the bot to behave when interacting with the users.",
         "history": [
@@ -92,3 +92,8 @@
 - 本项目由 python3.10 构建，仅供学习和研究使用，请勿用于破坏社会环境的用途。
 - 若文本数量较大，需要较长时间的训练时间和大量的计算资源。
 - 使用前请仔细阅读文档和代码，并确保已经正确配置 API key 和训练数据。
+
+欢迎加入早期的 Custom AI 中文社区
+
+- QQ Group
+![QQ-Group](https://cdn.nlark.com/yuque/0/2023/jpeg/164272/1680242510930-dc0b7da5-053a-4845-8fc1-1fb48b6daeb6.jpeg)
