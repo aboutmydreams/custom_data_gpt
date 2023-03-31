@@ -13,13 +13,13 @@ def test_train_api(payload):
 payload_url = json.dumps({
     "file_list": ["https://cdn.vitae3.me/public-static/213113032213132120.1680148867987.txt"],
     "space_name": "train_space_name",
-    "get_file_type": "url",
+    "file_tag": "url",
 })
 
 payload_path = json.dumps({
     "file_list": ["./training/master.txt"],
     "space_name": "train_space_name_path_test",
-    "get_file_type": "path",
+    "file_tag": "path",
 })
 
 test_train_api(payload_url)

@@ -23,7 +23,7 @@ class TrainInputs(Inputs):
     json = [JsonSchema({
         'space_name': Union[str, int],
         'file_list': List[str],
-        'get_file_type': str, # "url" | "path"
+        'file_tag': str, # "url" | "path"
     })]
 
 @app.route("/train", methods=["POST"])
@@ -40,14 +40,14 @@ def train():
         # 解析传入的参数
         file_list = request.json["file_list"]
         space_name = request.json["space_name"]
-        get_file_type = request.json["get_file_type"]
+        file_tag = request.json["file_tag"]
         index_path = "./training/models/{}.index".format(space_name)
         pkl_path = "./training/models/{}.pkl".format(space_name)
 
         trainingData = []
         
         # 根据传入的参数获取数据，如果获取数据的方式为 URL，则使用 requests 库发送 GET 请求获取数据
-        if get_file_type == "url":
+        if file_tag == "url":
             for url in file_list:
                 r = requests.get(url)
                 if r.status_code == 200:

@@ -26,13 +26,13 @@
 - 请求体参数:
   - file_list: 要训练的文件列表
   - space_name: 向量空间名称
-  - get_file_type: url(网络 txt 数据) or path(本地数据)
+  - file_tag: url(网络 txt 数据) or path(本地数据)
 
 ```json
 {
     "file_list": ["https://cdn.vitae3.me/public-static/213113032213132120.1680148867987.txt"],
     "space_name": "train_space_name",
-    "get_file_type": "url",
+    "file_tag": "url",
 }
 ```
 
@@ -70,7 +70,7 @@
   - space_name: 本地数据储存的向量空间名称
   - question: 问题
   - history: 历史记录
-  - model_name: 模型名称
+  - model_name: 模型名称, eg: text-davinci-003, gpt-3.5-turbo, gpt-3.5-turbo-0301, 你可以在 [模型列表](https://platform.openai.com/docs/models) 中尝试更多语言生成模型，以及在 [价格列表](https://openai.com/pricing) 中查询不同模型的价格。
 
 ```json
 {
