@@ -1,5 +1,10 @@
 # Custom Data GPT
 
+[![label](https://img.shields.io/badge/%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3-ZH-brightgreen)](https://github.com/aboutmydreams/custom_data_gpt/blob/main/README_ZH.md)
+[![label](https://img.shields.io/badge/English-EN-brightgreen)](https://github.com/aboutmydreams/custom_data_gpt/blob/main/README.md)
+
+
+
 This project is a chatbot based on OpenAI, suitable for enterprise privatized data fine-tuning. It can answer various questions related to enterprise products raised by users. It uses OpenAI's API for language model training and generation, and uses Faiss for text search and similarity matching. It supports getting training data from local files or URLs. This project is an enhanced version of [Custom-Company-Chatbot](https://replit.com/@DavidAtReplit/Custom-Company-Chatbot), inspired by the original project, extending the private data acquired from the network and locally (in principle, this is not true training, but finding relevant contexts and then telling GPT). Thanks to [@leeduckgo](https://github.com/leeduckgo) for the inspiring support.
 
 ## Steps to use

@@ -1,5 +1,8 @@
 # Custom Data GPT
 
+[![label](https://img.shields.io/badge/%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3-ZH-brightgreen)](https://github.com/aboutmydreams/custom_data_gpt/blob/main/README_ZH.md)
+[![label](https://img.shields.io/badge/English-EN-brightgreen)](https://github.com/aboutmydreams/custom_data_gpt/blob/main/README.md)
+
 本项目是一个基于 OpenAI，适用于企业私有化数据微调的聊天机器人，能够回答用户提出的各种和企业产品相关的问题。使用 OpenAI 的 API 进行语言模型的训练和生成，使用 Faiss 进行文本搜索和相似度匹配，支持从本地文件或 URL 获取训练数据。本项目为 [Custom-Company-Chatbot](https://replit.com/@DavidAtReplit/Custom-Company-Chatbot) 的增强版，受原项目启发，扩展了从网络以及本地获取 train 的私有数据 (注意，原理上讲，这不是真正训练，而是找到相关的上下文后再告诉 GPT)。感谢 [@leeduckgo](https://github.com/leeduckgo) 的激励支持。
 
 ## 使用步骤
