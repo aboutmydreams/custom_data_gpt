@@ -59,7 +59,7 @@ def train():
                     use_text = data_file.read()
                 trainingData.append(use_text)
                 data_file.close()
-        # 判断是否获取到训练数据，如果 trainingData 列表为空，则返回错误信息和400状态码
+        # 判断是否获取到训练数据，如果 trainingData 列表为空，则返回错误信息和 400 状态码
         if len(trainingData) < 1:
             return jsonify({"error": "No training data found"}), 400
         # 初始化文本拆分器和嵌入向量计算工具，并使用从文件中获取的训练数据创建向量存储器
@@ -72,6 +72,7 @@ def train():
         store.index = None
         with open(pkl_path, "wb") as f:
             pickle.dump(store, f)
+
         # 如果需要下载 model 文件
         # return send_file("./training/models/{}.pkl".format(model_name), as_attachment=True)
         return jsonify({
@@ -87,7 +88,7 @@ def train():
 
 class ChatInputs(Inputs):
     """
-    针对 '/train' 视图函数的输入参数规则
+    针对 '/chat' 视图函数的输入参数规则
     """
     json = [JsonSchema({
         'model_name': Union[str, int],
