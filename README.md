@@ -120,4 +120,8 @@ This API is used for chatbot conversations.
 - Please read the documentation and code carefully before using it, and make sure that the API key and training data are properly configured.
 
 Welcome to join the early Custom AI Chinese community
-![QQ Group](https://cdn.nlark.com/yuque/0/2023/jpeg/164272/1680242510930-dc0b7da5-053a-4845-8fc1-1fb48b6daeb6.jpeg#averageHue=%23797e7a&id=S3Eir&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+
+<p>
+  <img alt="QQ-Group" src="https://cdn.nlark.com/yuque/0/2023/png/164272/1680279312300-35636818-45ad-41ce-b0c7-d86aba020a2e.png?x-oss-process=image%2Fresize%2Cw_962%2Climit_0" width="300" style="border-radius: 10%;">
+  <img alt="WX-Group" src="https://cdn.nlark.com/yuque/0/2023/png/164272/1680278249286-59ac3cbd-a27b-4c54-87a1-3dd6f9cd46e0.png" width="300" style="border-radius: 10%;">
+</p>
