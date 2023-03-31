@@ -21,7 +21,7 @@ class TrainInputs(Inputs):
     针对 '/train' 视图函数的输入参数规则
     """
     json = [JsonSchema({
-        'model_name': Union[str, int],
+        'space_name': Union[str, int],
         'file_list': List[str],
         'get_file_type': str, # "url" | "path"
     })]
@@ -39,10 +39,10 @@ def train():
     try:
         # 解析传入的参数
         file_list = request.json["file_list"]
-        model_name = request.json["model_name"]
+        space_name = request.json["space_name"]
         get_file_type = request.json["get_file_type"]
-        index_path = "./training/models/{}.index".format(model_name)
-        pkl_path = "./training/models/{}.pkl".format(model_name)
+        index_path = "./training/models/{}.index".format(space_name)
+        pkl_path = "./training/models/{}.pkl".format(space_name)
 
         trainingData = []
         
@@ -74,14 +74,14 @@ def train():
             pickle.dump(store, f)
 
         # 如果需要下载 model 文件
-        # return send_file("./training/models/{}.pkl".format(model_name), as_attachment=True)
+        # return send_file("./training/models/{}.pkl".format(space_name), as_attachment=True)
         return jsonify({
                     "code": 0,
                     "msg": "success",
-                    "data": {"model_name": model_name,
+                    "data": {"space_name": space_name,
                              "size_type": "kb",
-                             "pkl_model_size": get_file_size(pkl_path),
-                             "index_model_size": get_file_size(index_path)}}), 200
+                             "pkl_space_size": get_file_size(pkl_path),
+                             "index_space_size": get_file_size(index_path)}}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
@@ -91,9 +91,10 @@ class ChatInputs(Inputs):
     针对 '/chat' 视图函数的输入参数规则
     """
     json = [JsonSchema({
-        'model_name': Union[str, int],
+        'space_name': Union[str, int],
         'question': str,
         'history': List[Union[str, None]],
+        'model_name': str,
     })]
 
 @app.route("/chat", methods=["POST"])
@@ -106,13 +107,14 @@ def chat():
         return jsonify({'errors': errors}), 400
     try:
         # 获取请求参数
-        model_name = request.json["model_name"]
+        space_name = request.json["space_name"]
         question = request.json["question"]
         history = request.json["history"]
+        model_name = request.json["model_name"]
 
         # 从文件中读取搜索引擎、向量空间等信息
-        index = faiss.read_index("./training/models/{}.index".format(model_name))
-        with open("./training/models/{}.pkl".format(model_name), "rb") as f:
+        index = faiss.read_index("./training/models/{}.index".format(space_name))
+        with open("./training/models/{}.pkl".format(space_name), "rb") as f:
             store = pickle.load(f)
         store.index = index
 
@@ -124,7 +126,9 @@ def chat():
             template=promptTemplate, input_variables=["history", "context", "question"]
         )
         
-        llmChain = LLMChain(prompt=prompt, llm=OpenAI(temperature=0.25,openai_api_key=os.environ["OPENAI_API_KEY"]))
+        llmChain = LLMChain(prompt=prompt, llm=OpenAI(temperature=0.25,
+                                                      model_name=model_name,
+                                                      openai_api_key=os.environ["OPENAI_API_KEY"]))
         
         # 通过搜索引擎获取文本上下文信息，结合模型产生回答
         docs = store.similarity_search(question)

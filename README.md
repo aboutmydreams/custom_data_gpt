@@ -21,18 +21,27 @@
 
 #### 请求
 
-- 方法：POST
-- 请求体：JSON 格式
-- 请求体参数：
-  - file_list：要训练的文件列表
-  - model_name：模型名称
+- 方法: POST
+- 请求体: JSON 格式
+- 请求体参数:
+  - file_list: 要训练的文件列表
+  - space_name: 向量空间名称
+  - get_file_type: url(网络 txt 数据) or path(本地数据)
+
+```json
+{
+    "file_list": ["https://cdn.vitae3.me/public-static/213113032213132120.1680148867987.txt"],
+    "space_name": "train_space_name",
+    "get_file_type": "url",
+}
+```
 
 #### 响应
 
-- 状态码：200
-- 响应体：JSON 格式
-- 响应体参数：
-  - code：状态信息 0 正常，1 异常
+- 状态码: 200
+- 响应体: JSON 格式
+- 响应体参数:
+  - code: 状态信息 0 正常，1 异常
   - data: 数据
   - msg: success
 
@@ -40,9 +49,9 @@
 {
   "code": 0,
   "data": {
-    "index_model_size": 6.0439,
-    "model_name": "train_model_name",
-    "pkl_model_size": 2.4023,
+    "index_space_size": 6.0439,
+    "space_name": "train_space_name",
+    "pkl_space_size": 2.4023,
     "size_type": "kb"
   },
   "msg": "success"
@@ -55,19 +64,29 @@
 
 #### chat 请求
 
-- 方法：POST
-- 请求体：JSON 格式
-- 请求体参数：
-  - model_name：模型名称
-  - question：问题
-  - history：历史记录
+- 方法: POST
+- 请求体: JSON 格式
+- 请求体参数:
+  - space_name: 本地数据储存的向量空间名称
+  - question: 问题
+  - history: 历史记录
+  - model_name: 模型名称
+
+```json
+{
+  "history": ["human: how are u", "Bot: fine"],
+  "question": "How to build a GPT3 Chatbot for your Company",
+  "space_name": "train_space_name",
+  "model_name": "text-davinci-003",
+}
+```
 
 #### chat 响应
 
-- 状态码：200
-- 响应体：JSON 格式
-- 响应体参数：
-  - code：状态信息 0 正常，1 异常
+- 状态码: 200
+- 响应体: JSON 格式
+- 响应体参数:
+  - code: 状态信息 0 正常，1 异常
   - data: 数据
   - msg: success
 

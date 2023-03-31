@@ -6,7 +6,8 @@ url = "http://127.0.0.1:5000/chat"
 payload = json.dumps({
   "history": ["human: how are u", "Bot: fine"],
   "question": "How to build a GPT3 Chatbot for your Company",
-  "model_name": "train_model_name",
+  "space_name": "train_space_name",
+  "model_name": "text-davinci-003",
 })
 headers = {
   'Content-Type': 'application/json'
