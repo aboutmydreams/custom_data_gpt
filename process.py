@@ -53,7 +53,7 @@ def runPrompt():
 
     store.index = index
 
-    with open("training/master.txt", "r") as f:
+    with open("training/prompt/master.txt", "r") as f:
         promptTemplate = f.read()
 
     prompt = Prompt(
@@ -65,6 +65,7 @@ def runPrompt():
         prompt=prompt,
         llm=OpenAI(
             temperature=0.25,
+            model_name="gpt-3.5-turbo-0301",
             openai_api_key=os.environ["OPENAI_API_KEY"],
         ),
     )

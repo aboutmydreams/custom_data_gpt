@@ -16,7 +16,7 @@ with open("faiss.pkl", "rb") as f:
 
 store.index = index
 
-with open("training/master.txt", "r") as f:
+with open("training/prompt/master.txt", "r") as f:
   promptTemplate = f.read()
 
 prompt = Prompt(template=promptTemplate, input_variables=["history", "context", "question"])

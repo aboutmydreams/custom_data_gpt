@@ -100,12 +100,12 @@
     "code": 0,
     "msg": "success",
     "data": {
-        "answer": " Building a GPT3 chatbot for your company requires a few steps. First, you need to get your OpenAI API key and add it to Secrets as OPENAI_API_KEY. Next, you need to create an API_KEY for the JSON API. After that, you need to fill the training/facts folder with as many text documents as you can containing information about the company you're training it on. Finally, you need to edit the master.txt file to represent how you want the bot to behave when interacting with the users.",
+        "answer": " Building a GPT3 chatbot for your company requires a few steps. First, you need to get your OpenAI API key and add it to Secrets as OPENAI_API_KEY. Next, you need to create an API_KEY for the JSON API. After that, you need to fill the training/facts folder with as many text documents as you can containing information about the company you're training it on. Finally, you need to edit the prompt/master.txt file to represent how you want the bot to behave when interacting with the users.",
         "history": [
             "human: how are u",
             "Bot: fine",
             "Human: How to build a GPT3 Chatbot for your Company",
-            "Bot:  Building a GPT3 chatbot for your company requires a few steps. First, you need to get your OpenAI API key and add it to Secrets as OPENAI_API_KEY. Next, you need to create an API_KEY for the JSON API. After that, you need to fill the training/facts folder with as many text documents as you can containing information about the company you're training it on. Finally, you need to edit the master.txt file to represent how you want the bot to behave when interacting with the users."
+            "Bot:  Building a GPT3 chatbot for your company requires a few steps. First, you need to get your OpenAI API key and add it to Secrets as OPENAI_API_KEY. Next, you need to create an API_KEY for the JSON API. After that, you need to fill the training/facts folder with as many text documents as you can containing information about the company you're training it on. Finally, you need to edit the prompt/master.txt file to represent how you want the bot to behave when interacting with the users."
         ]
     }
 }

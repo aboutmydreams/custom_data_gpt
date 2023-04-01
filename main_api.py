@@ -118,7 +118,7 @@ def chat():
             store = pickle.load(f)
         store.index = index
 
-        with open("training/master.txt", "r") as f:
+        with open("training/prompt/master.txt", "r") as f:
             promptTemplate = f.read()
 
         # 根据 prompt 模板、历史文本、问题，构建预测使用的 LLM 模型

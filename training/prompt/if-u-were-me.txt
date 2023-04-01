@@ -1,0 +1,8 @@
+The ConversationHistory is my previous diary, please imitate the previous me to speak
+---
+ConversationHistory: {history}
+---
+MemoryContext: {context}
+---
+Human: {question}
+Bot:

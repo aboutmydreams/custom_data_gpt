@@ -8,7 +8,7 @@ _Build your own AI virtual assistant using your company documentation and GPT3_
 2. Make up and `API_KEY` for the JSON API, this can just be something like a password if you'd like
 3. Fill the `training/facts` folder with as many `text` documents as you can containing information about the company you're training it on. Top tips would be handbooks, websites, how-to guides, and anything public facing.
 4. Please don't put anything top secret in there, no one wants their company financials leaked by an AI chatbot!
-5. Edit the `master.txt` file to represent how you want the bot to behave when interacting with the users
+5. Edit the `prompt/master.txt` file to represent how you want the bot to behave when interacting with the users
 6. Click **Run**, select option `1`
 7. To chat with the bot, once you've one the training, select option `2`
 

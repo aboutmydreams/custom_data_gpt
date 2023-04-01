@@ -17,7 +17,7 @@ payload_url = json.dumps({
 })
 
 payload_path = json.dumps({
-    "file_list": ["./training/master.txt"],
+    "file_list": ["./training/prompt/master.txt"],
     "space_name": "train_space_name_path_test",
     "file_tag": "path",
 })
