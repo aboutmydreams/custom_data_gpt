@@ -4,3 +4,4 @@ venv
 .env
 .DS_Store
 training/models/*
+training/facts/*
