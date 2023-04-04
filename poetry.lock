@@ -118,6 +118,14 @@ python-versions = "*"
 pycparser = "*"
 
 [[package]]
+name = "chardet"
+version = "3.0.4"
+description = "Universal encoding detector for Python 2 and 3"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "charset-normalizer"
 version = "2.1.1"
 description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
@@ -283,6 +291,17 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "googletrans"
+version = "4.0.0rc1"
+description = "Free Google Translate API for Python. Translates totally free of charge."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+httpx = "0.13.3"
+
+[[package]]
 name = "greenlet"
 version = "2.0.2"
 description = "Lightweight in-process concurrent programming"
@@ -295,12 +314,86 @@ docs = ["sphinx", "docutils (<0.18)"]
 test = ["objgraph", "psutil"]
 
 [[package]]
+name = "h11"
+version = "0.9.0"
+description = "A pure-Python, bring-your-own-I/O implementation of HTTP/1.1"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "h2"
+version = "3.2.0"
+description = "HTTP/2 State-Machine based protocol implementation"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+hpack = ">=3.0,<4"
+hyperframe = ">=5.2.0,<6"
+
+[[package]]
+name = "hpack"
+version = "3.0.0"
+description = "Pure-Python HPACK header compression"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "hstspreload"
+version = "2023.1.1"
+description = "Chromium HSTS Preload list as a Python package"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "httpcore"
+version = "0.9.1"
+description = "A minimal low-level HTTP client."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+h11 = ">=0.8,<0.10"
+h2 = ">=3.0.0,<4.0.0"
+sniffio = ">=1.0.0,<2.0.0"
+
+[[package]]
+name = "httpx"
+version = "0.13.3"
+description = "The next generation HTTP client."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+certifi = "*"
+chardet = ">=3.0.0,<4.0.0"
+hstspreload = "*"
+httpcore = ">=0.9.0,<0.10.0"
+idna = ">=2.0.0,<3.0.0"
+rfc3986 = ">=1.3,<2"
+sniffio = "*"
+
+[[package]]
+name = "hyperframe"
+version = "5.2.0"
+description = "HTTP/2 framing layer for Python"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "idna"
-version = "3.4"
+version = "2.10"
 description = "Internationalized Domain Names in Applications (IDNA)"
 category = "main"
 optional = false
-python-versions = ">=3.5"
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [[package]]
 name = "iso8601"
@@ -386,6 +479,17 @@ tenacity = ">=8.1.0,<9.0.0"
 [package.extras]
 all = ["faiss-cpu (>=1,<2)", "wikipedia (>=1,<2)", "elasticsearch (>=8,<9)", "opensearch-py (>=2.0.0,<3.0.0)", "redis (>=4,<5)", "manifest-ml (>=0.0.1,<0.0.2)", "spacy (>=3,<4)", "nltk (>=3,<4)", "transformers (>=4,<5)", "beautifulsoup4 (>=4,<5)", "torch (>=1,<2)", "jinja2 (>=3,<4)", "tiktoken (>=0.3.2,<0.4.0)", "pinecone-client (>=2,<3)", "weaviate-client (>=3,<4)", "google-api-python-client (==2.70.0)", "wolframalpha (==5.0.0)", "anthropic (>=0.2.2,<0.3.0)", "qdrant-client (>=1.0.4,<2.0.0)", "tensorflow-text (>=2.11.0,<3.0.0)", "cohere (>=3,<4)", "openai (>=0,<1)", "nlpcloud (>=1,<2)", "nomic (>=1.0.43,<2.0.0)", "huggingface_hub (>=0,<1)", "jina (>=3.14,<4.0)", "google-search-results (>=2,<3)", "sentence-transformers (>=2,<3)", "pypdf (>=3.4.0,<4.0.0)", "networkx (>=2.6.3,<3.0.0)", "aleph-alpha-client (>=2.15.0,<3.0.0)", "deeplake (>=3.2.9,<4.0.0)", "pgvector (>=0.1.6,<0.2.0)", "psycopg2-binary (>=2.9.5,<3.0.0)"]
 llms = ["manifest-ml (>=0.0.1,<0.0.2)", "transformers (>=4,<5)", "torch (>=1,<2)", "anthropic (>=0.2.2,<0.3.0)", "cohere (>=3,<4)", "openai (>=0,<1)", "nlpcloud (>=1,<2)", "huggingface_hub (>=0,<1)"]
+
+[[package]]
+name = "langdetect"
+version = "1.0.9"
+description = "Language detection library ported from Google's language-detection."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+six = "*"
 
 [[package]]
 name = "lxml"
@@ -756,6 +860,17 @@ socks = ["PySocks (>=1.5.6,!=1.5.7)"]
 use_chardet_on_py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
+name = "rfc3986"
+version = "1.5.0"
+description = "Validating URI References per RFC 3986"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+idna2008 = ["idna"]
+
+[[package]]
 name = "rope"
 version = "1.7.0"
 description = "a python refactoring library..."
@@ -769,6 +884,22 @@ pytoolconfig = {version = ">=1.2.2", extras = ["global"]}
 [package.extras]
 dev = ["pytest (>=7.0.1)", "pytest-timeout (>=2.1.0)", "build (>=0.7.0)", "pre-commit (>=2.20.0)"]
 doc = ["pytoolconfig", "sphinx (>=4.5.0)", "sphinx-autodoc-typehints (>=1.18.1)", "sphinx-rtd-theme (>=1.0.0)"]
+
+[[package]]
+name = "six"
+version = "1.16.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "sniffio"
+version = "1.3.0"
+description = "Sniff out which async library your code is running under"
+category = "main"
+optional = false
+python-versions = ">=3.7"
 
 [[package]]
 name = "sqlalchemy"
@@ -959,21 +1090,19 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.10.0,<3.11"
-content-hash = "ba05a96c308f8dbdbcf4ae1f7eb8f0c162717ed91bff2cbb8612e746e6123d32"
+content-hash = "318bc1495af4635a861a1a4737541c431b744b9e9b48863ea8e74f58d2108713"
 
 [metadata.files]
 aiohttp = []
 aiosignal = []
 argon2-cffi = []
 argon2-cffi-bindings = []
-async-timeout = [
-    {file = "async-timeout-4.0.2.tar.gz", hash = "sha256:2163e1640ddb52b7a8c80d0a67a08587e5d245cc9c553a74a847056bc2976b15"},
-    {file = "async_timeout-4.0.2-py3-none-any.whl", hash = "sha256:8ca1e4fcf50d07413d66d1a5e416e42cfdf5851c981d679a09851a6853383b3c"},
-]
+async-timeout = []
 attrs = []
 blobfile = []
 certifi = []
 cffi = []
+chardet = []
 charset-normalizer = []
 click = []
 colorama = []
@@ -988,7 +1117,15 @@ flask-inputs = []
 frozenlist = []
 future = []
 geojson = []
+googletrans = []
 greenlet = []
+h11 = []
+h2 = []
+hpack = []
+hstspreload = []
+httpcore = []
+httpx = []
+hyperframe = []
 idna = []
 iso8601 = []
 itsdangerous = []
@@ -996,6 +1133,7 @@ jedi = []
 jinja2 = []
 jsonschema = []
 langchain = []
+langdetect = []
 lxml = []
 markupsafe = []
 marshmallow = []
@@ -1010,10 +1148,7 @@ passlib = []
 platformdirs = []
 pluggy = []
 protobuf = []
-pycparser = [
-    {file = "pycparser-2.21-py2.py3-none-any.whl", hash = "sha256:8ee45429555515e1f6b185e78100aea234072576aa43ab53aefcae078162fca9"},
-    {file = "pycparser-2.21.tar.gz", hash = "sha256:e644fdec12f7872f86c58ff790da456218b10f863970249516d60a5eaca77206"},
-]
+pycparser = []
 pycryptodomex = []
 pydantic = []
 pyflakes = []
@@ -1028,7 +1163,10 @@ regex = []
 replit = []
 replit-python-lsp-server = []
 requests = []
+rfc3986 = []
 rope = []
+six = []
+sniffio = []
 sqlalchemy = []
 tenacity = []
 tiktoken = []

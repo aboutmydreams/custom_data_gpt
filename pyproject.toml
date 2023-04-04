@@ -17,6 +17,8 @@ faiss-cpu = "^1.7.3"
 tiktoken = "^0.2.0"
 Flask-Inputs = "^0.3.0"
 jsonschema = "^4.17.3"
+langdetect = "^1.0.9"
+googletrans = "4.0.0-rc1"
 
 [tool.poetry.dev-dependencies]
 debugpy = "^1.6.2"

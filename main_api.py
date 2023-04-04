@@ -12,6 +12,7 @@ from dotenv import load_dotenv
 
 from utils.flask_input_fixed import Inputs, JsonSchema
 from utils.get_file_size import get_file_size
+from utils.translate import get_language_type, translate
 
 load_dotenv()
 app = Flask(__name__)
@@ -51,7 +52,11 @@ def train():
             for url in file_list:
                 r = requests.get(url)
                 if r.status_code == 200:
-                    trainingData.append(r.text) # 将获取到的文本数据添加到 trainingData 列表中
+                    if 'zh' in get_language_type(r.text):
+                        en_content = translate(r.text)
+                        trainingData.append(en_content) # 将获取到的文本数据添加到 trainingData 列表中
+                    else:
+                        trainingData.append(r.text) 
         else:
             # 如果获取数据方式为本地文件路径，则逐个读取文件并存储至 trainingData 列表中
             for file_path in file_list:
