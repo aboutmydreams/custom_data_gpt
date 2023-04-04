@@ -52,6 +52,7 @@ def train():
             for url in file_list:
                 r = requests.get(url)
                 if r.status_code == 200:
+                    # 如果训练数据是中文，则替换为英文
                     if 'zh' in get_language_type(r.text):
                         en_content = translate(r.text)
                         trainingData.append(en_content) # 将获取到的文本数据添加到 trainingData 列表中
