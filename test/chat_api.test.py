@@ -8,6 +8,7 @@ payload = json.dumps({
   "question": "How to build a GPT3 Chatbot for your Company",
   "space_name": "train_space_name",
   "model_name": "text-davinci-003",
+  "prompt_name": "if-u-were-me", # 非必填参数，默认则是 master
 })
 headers = {
   'Content-Type': 'application/json'
