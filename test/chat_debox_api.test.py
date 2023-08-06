@@ -8,7 +8,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 print(current_dir)
 
 # url = "http://127.0.0.1:5000/chat"
-url = "https://cleverspanishautoresponder--abouthomeloving.repl.co/auto_chat"
+url = "https://clever-spanish-autoresponder-abouthomeloving.replit.app/auto_chat"
 
 
 def append_str_to_file(s):
