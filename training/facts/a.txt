@@ -1,37 +1,248 @@
-# Build a GPT3 Chatbot for your Company
+Wallet/DAPP Features
+0:27 Estimated 94 Words EN Language
+Auto open
+off
+📺
+DeBox is the first and best community-driven Web3 social platform.
+DeBox focuses on solving the problem of social information authenticity and reducing fraud. DeBox will provide decentralized social features and services for Web 3.0 communities, such as holding tokens to chat, open platforms for DAO tools, multi-dimensional social graphs, etc.
+​Join DeBox to find your own community and start your wonderful journery.
 
-_Build your own AI virtual assistant using your company documentation and GPT3_
+Debox
+DeBox Website: https://debox.pro/​
+Go to app: https://app.debox.pro/​
+Support: https://debox.pro/dao/gOyjDJl4​
+Twitter: https://twitter.com/DeBox_Social​
+Next - What is DeBox
+DeBox Features
+Holding Tokens to Chat
 
-# Set Up
+Hoding token to chat
+Based on blockchain DID, token holders could join the corresponding groups without permission from anyone.
+Identities of users are tagged with multiple aspects to ensure the credibility of their statements, which makes messages flow with quality and credibility.
+The Open Platform DAO Tools
 
-1. Get your OpenAI API key and add it **Secrets** as `OPENAI_API_KEY`
-2. Make up and `API_KEY` for the JSON API, this can just be something like a password if you'd like
-3. Fill the `training/facts` folder with as many `text` documents as you can containing information about the company you're training it on. Top tips would be handbooks, websites, how-to guides, and anything public facing.
-4. Please don't put anything top secret in there, no one wants their company financials leaked by an AI chatbot!
-5. Edit the `prompt/master.txt` file to represent how you want the bot to behave when interacting with the users
-6. Click **Run**, select option `1`
-7. To chat with the bot, once you've one the training, select option `2`
+The open Platform DAO Tools
+Groups are the core of all DAO communities. DAO community activities could be held completely within DeBox, including proposals, voting, treasury, asset management, trading, raffles, contract tools, etc.
+DeBox upholds the concept of decentralization, it will be built to a completely open platform with DAOs governance. More developers would be inspired to participate in building the platform by setting up the DeBox Foundation.
+A Multi-dimensional Social Relationship
 
-## JSON API (Advanced Users)
-Option 3, or stating automatically after five seconds on the menu, is the JSON API. You can use POST requests to this Repl's `repl.co` address to take the chat to a different location or app.
+DeBox carves out the real DID relationship of users from multiple aspects, such as holdings, transactions, browsing, and chatting.
+DeBox supports turning useful information into profits. Users can acquire quality content through multiple payment methods.
+​
+What is DeBox - Previous
+DeBox Introduction
+Next - What is DeBox
+DeBox Community
+Join our community or check our website to know more about us
+DeBox official website：https://debox.pro/​
+Discord：https://discord.com/invite/debox​
+Twitter：https://twitter.com/DeBox_Social
 
-Here's a quick guide to dealing with the API part in Python
 
-`import requests`
+# How to Join debox
+## Step 1: Install DeBox APP
+Method 1: Search DeBox on the APP Store or Google Play on your phone, then download DeBox APP.
+Method 2: Visit DeBox Official website, choose Android or IOS according to your phone, download and install DeBox.
+DeBox Official Website：https://debox.pro
 
-### data to be sent to the server
-`data = {'key': 'YOUR API KEY', 'question': 'Your question', 'history': 'previous questioning history'}`
+## Step 2: Log in with Wallet
+Sign in with Crypto Wallet
+Users who already had a Web3.0 wallet can be connected to your wallet through "Wallet Connect". You only need to confirm that the wallet signature can be connected to log in successfully.
+1.
+Click WalletConnet and choose a wallet that you own.
+2.
+Confirm verification and your wallet has been connected.
+DeBox needs only one signature to log in and will not read or backup your private key.
+Once you have connected your wallet with DeBox, you don't have to connect it agin.
+​
+Import Wallet
+Users who already had a Web3.0 wallet can also import your wallet to DeBox
+1.
+Click "Create Wallet" and then Choose a network you want (ETH or BSC).
+2.
+Choose to use private key or secret recovery phrase to import your wallet.
+3.
+Set up password and your wallet will be well connected.
+Important notice: DeBox will not read or backup your private key or mnemonic word, users take full responsibility for keeping their private key and mnemonic word safe.
+​
+Create a New Wallet to Log in
+For users without a wallet, you can create a local wallet through DeBox APP, you will automatically be connected and log in to DeBox.
+1.Click "Create Wallet" and then Choose a network you want (ETH or BSC).
+2.Set up your password and read carefully the tips.
+3.Please backup your memorizing words carefully which are used to recover your wallet. Thus, you can't disclose those words to anymore.
+4.Fill in order of your secret recovery phrase for the verification.
+5.Once you passed the verification, your wallet has been created.
+Important notice: DeBox will not read or backup your private key or mnemonic word, users take full responsibility for keeping their private key and mnemonic word safe.
 
-### sending post request and saving response as response object 
-`r = requests.post(url = URL, data = data) `
-  
-### extracting response json 
-`response_data = r.json() `
-  
-### printing response 
-`print(response_data)`
+## Step 3: Join vDBX Group
+The vDBX community is a public community of vDBX holders. The purpose of vDBX community is to share internal activities of DeBox and provide a chat platform for vDBX holders. Join and don't miss out the activities of vDBX community.
+Open DeBox APP main page click the banner on top 
+Click Claim 1 vDBX 
+Click Join DeBox Airdrop Group and successfully join our community.
 
-# Credit
+# How to use debox？
+## Wallet/DAPP Features
+On the profile page of DeBox APP:
+Find on “Laboratory”
+Click on “DAPP” 
+Click on the DAPP of your choice. You could connect to various Web 3.0 projects (DApps) for interactive activities through authorizing wallet signatures. 
+Tips: Please try to only use the DApps authenticated in DeBox. If you want to use other DApps, please check whether the authorization information is normal and pay attention to preventing malicious authorization to avoid loss of your wallet assets.
 
-All based on the [Amjad Masad Chat bot](https://ai.repl.page) by IronCladDev on Replit
-For more information on how this works, check out [Zahid Khawaja's Tutorial](https://replit.com/@zahidkhawaja/Replit-Assistant?v=1).
+For example:
+You can use the multi-chain NFT aggregation trading platform “Element” to buy non-fungible tokens (NFTs), such as DeBox Guardians Penguin.
+Or you can use the decentralized trading platform “Uniswap” to buy Tokens (FT), such as People.
+
+## Create/Join DAO
+DAOs are decentralized groups in DeBox
+Create DAO
+To create the DAO of a specific Token or NFT, you need to hold such Token or NFT. What's more, if others have created the DAO of this specific Token or NFT, you can't create it anymore. So, the quicker, the better!
+Simply click Create on the top right corner 
+Enter the contract address of your asset
+Click Create DAO
+Join DAO
+In order to join the specific DAO, your wallet must contain corresponding on-chain Tokens (non-fungible or fungible), otherwise you will not be able to join the DAO. 
+In order to get this Token, you can either purchase in DeBox wallet or transfer it to your wallet address of logging. 
+Click Search
+Enter keyword or contract address
+Click Join DAO.
+
+## Create/Join Club
+A "Club "is a private group within DeBox. In Club, we offer you professional community group management tools which will maximumly enhance your community management and operations.
+Create Club
+Users must hold a  to create a Club, which can be purchased through NFT trading platforms such as and.
+Example: DeBox Guardians - Penguin Collection
+Click "Create Club" or on DeBox Dapp.
+Click "Connect Wallet" and then file the contents according to the instruction.
+Click "sumbit" . 
+Sign your signature and stake your DeBox Guardians NFT according to following instructions.
+During the internal testing of DeBox, you need to contact the DeBox team to confirm the creation of a Club. For contact information, please check ​
+Join Club
+There are two types of Club, you can choose to join according to your personal preferences:
+One is free Club, you don't need to pay vDBX to join.
+Another one is paid Club, you need to pay certain vDBX to join.
+You need to contact the Club owner to apply, and you can join the club after the owner has approved due to the fact that the Clubs are private groups created by DeBox Guardians Penguin NFT holders.
+Tips: Club is a private group, the creator has the right to delete or block comments, ban or remove members. Therefore, please respect the rules of the Club and speak in a civilized manner.
+
+## Create Small Chat Group
+1. How to create small chat group
+On DeBox Chat homepage,
+Click "+" in the upper right corner
+Click "Create New Chat", select "Contacts"
+Click "Create now"
+​
+2. Tool at the small chat group
+LuckyBox
+LuckyBox feature allows you to distribute vDBX tokens within your group as a gift. You can set the amount and quantity that you want to distribute, and the amount received by member of the group will be randomly determined.
+Vote
+You can create a vote at Debox so that your team or community can express their opinions and ideas, helping you to make informed decisions that align with their preferences and needs.
+Giveaway
+You can utilize the Giveaway feature to establish and launch your promotional campaign.
+Meetup
+Debox also offers a Meetup tool that simplifies the process of event creation, making it easier for people to join and participate in your event.
+The Small Chat Group function is limited to 500 people, and it is not avaioable to use DAO tools, Lucky Box (red envelope function) and other functions like other group such as "Club". 
+
+## DAO Voting and Managment
+DeBox offers various DAO managment tools.
+After joining DAO, users can chat freely in the group, as well as make proposals, votes, and elections for MODs. More features are coming, please stay tuned!
+
+## Moments
+1. Posting moments: 
+Click "Moments" on the main page of DeBox APP → click "+" in the lower right corner, edit the content → click "Publish". You can also tag topics using "#" when you post your moment.
+2. Comments: 
+On the main page of DeBox APP, click "Moments" → open any published "Moments", edit comments → click "Send".
+3. Follow users: 
+Click "Follow" on your favourite users or on KOLs’ homepage to improve the efficiency of getting the information of your interest.
+4. Private messaging: 
+You can contact your followers directly which provides more possibilities for social networking.
+
+## NFT Avatar
+DeBox supports users to use the NFT in their wallet as an avatar. The steps are: click on the personal avatar in the chat box to open the profile page → click "avatar" → select the corresponding "NFT" → set it as PFP.
+
+## More Features
+Pop-up Room 
+Multi-user online voice chatting and other related features. The feature is not released yet. Please stay tuned. 
+DID Certification
+Decentralized identity in DeBox, will be evaluating users on multiple aspects including holding, trading, browsing, and chatting. To build a more realistic Web3 social network identity. The feature is not released yet. Please stay tuned. 
+More on DAO Governing  & Managing tools
+We will update more DAO tools and make DeBox an open platform to attract more developers to join. More features are coming. Pelase stay tuned!
+
+# QA
+## Wallet security
+Will a new wallet created in DeBox have security risks?
+The wallet's private key is stored on the user's device and is not uploaded to the server. 
+Please keep the wallet mnemonics and private key in a safe and reliable place. 
+Once they are lost or leaked, the assets in your wallet will be lost.
+
+## Misbehaving Users
+Will users be punished by DeBox for bad behaviors such as false information and malicious links posted in DeBox?
+DeBox is a decentralized social platform and DeBox will not take any action against those users. 
+But all users in DeBox have specific DID identities. 
+When user A commits bad behaviours above, other users will mark his DID identities, such as "spammers" or "malicious link publishers", etc., resulting in damage to the reputation of user A, and no user is willing to engage in social activities with user A, which may be one of the best ways to punish misbehaving users.
+
+## Risk of Fraud
+How can I avoid being scammed while participating in social activities in DeBox as it is a decentralized social platform?
+​
+While participating in social activities in DeBox, please be sure to verify the reputation and tags of other users’ DID first. Please be aware of airdrop or giveaway scams, phishing website frauds, false customer service or false APPs. Do not click on unknown links. Do not authorize your wallet signature indiscriminately. Try to use the DAPP function within the DeBox wallet for interaction.
+What should I do if I have already been scammed and caused property lost?
+We are deeply sorry for your loss. However, DeBox is a decentralized platform, if you have been scammed by another user resulting in a loss of assets, we are sorry to say there is nothing we can do about your loss. What we can do is highlight the user who committed the scam. If you try to recover your assets, DeBox DAO members will do their best to assist. DeBox itself will always be a decentralized and transparent platform.
+
+## Common Knowledge Q&A
+
+### Can I Connect my MetaMask Wallet to DeBox?
+Of course. 
+Click WalletConnet and choose MetaMask
+Confirm verification and your wallet has been connected.
+You can also use other wallets supported by “Wallet Connect”, such as TP Wallet.
+
+### What is vDBX? How can I get more vDBX?
+What is vDBX?
+vDBX is a built-in point in DeBox. It is an important measurement for receiving airdrops. DeBox has not yet issued tokens but plans to do so in the future.。
+​
+How can I get more vDBX?
+vDBX can be obtained by daily login, creating or joining DAO, and holding DeBox Guardians Penguin NFT. 
+Currently,  NFT holders can receive a minimum of 20 vDBX points per day and is currently availbale to be purchased through NFT trading platforms such as and. To know more information, please click: .
+​
+### What is DID? What is the use of DID identities within DeBox?
+DID () ​​can be understood as a decentralized identity. 
+Since the behaviour and activities of the Web3.0 wallet on the chain are open, transparent and unchangeable, the wallet-to-wallet activities can represent an integral part of the user's true identity. 
+Specifically in DeBox, it is the user's interaction through this wallet to hold a certain asset or perform certain activities on the chain, which can show the real certificate of the user's interest, contribution, assets, and activity time. This kind of certificate information can constitute a DID identity. 
+The DID identity in DeBox is the user's social credential. It acts the same as the credit score of Web2.0, but the DID identity of DeBox is decentralized and soul-bounded. Using DeBox's DID identity can improve the authenticity of social activities.
+
+### Can I stay in the corresponding DAO group after I sell the specific Tokens/NFTs?
+No,
+Once your wallet loses all its Tokens/NFT, you will be out of this DAO group by default. 
+Of course, you can reacquire Tokens/NFTs by purchasing them, etc., and join the DAO group again.
+
+### How to apply for a mod of the DAO?
+Anyone can apply for the Mod of the DAO community, and the election is through fully transparent voting. But please note that the mod only has a one-month term, Mod will be re-elected when expired.
+
+### How to purchase a DeBox NFT？
+The DeBox Project will launch five series of NFT products, and each series will correspond to several social features of the DeBox product itself. Currently, the features of the first series of NFT have been clarified, DeBox Guardians Penguin NFT, holders can create a Club on DeBox.
+It can be purchased on NFT trading platforms such as Element and Opensea. The purchase links are as follows:
+Element：https://element.market/collections/debox-guardians-penguin#/​
+Opensea：https://opensea.io/zh-CN/collection/debox-guardians-penguin
+
+### Are Clubs Created by DeBox Guardians Penguin NFT permanent?
+An NFT can only create one Club, and the NFT holder has all authority over the Club. 
+If the NFT is sold or transferred, the ownership of the Club will also be transferred. With the migration of the NFT, the new holder of the NFT has the right to dissolve the Club and create a new one, so the Club does not exist forever.
+
+## Community Cooperation
+How to cooperatw with DeBox?
+DeBox is a decentralized social platform that welcomes any DAO or community to join. 
+DeBox has a full set of service plan and tools for supportingDAO and Club. Although some functional tools are still under development and testing, they will be constantly updated and improved in the future. 
+If your community or DAO is interested in joining DeBox, DeBox will be possible provide you with customized cooperation, management and incentive programs free of charge.
+Please contact us by clicking the link below.
+
+👉Business Cooperation: DeBox collab request: https://docs.google.com/forms/d/e/1FAIpQLScfs6Tw2cDOE2nNrO4CaGXmlpC6oe6ogRFq1p_3QCrbnfGu4Q/viewform
+
+👉Builder Veify: DeBox In-APP Verfication: https://docs.google.com/forms/d/e/1FAIpQLSd_Q0Hn7e7J3Cr_VEOuuH_U_rC7ELcBkUKlbX_4KaJX1rlDtA/viewform
+
+## Feedback
+How to contact DeBox if I find any bugs or want to make a suggestion when using the APP？
+Click profile tab on the main page of DeBox APP  
+Click "tool button" on the top right corner 
+Click "Feedback" 
+Select and fill the content of your feedback, DeBox DAO members will record and handle these questions, please wait patiently for the reply.
+
+## Brand Resources
+Brand Resources link: https://help.debox.pro/en/faq/brand-resources/logo

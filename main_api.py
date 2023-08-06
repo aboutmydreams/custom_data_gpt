@@ -1,11 +1,11 @@
-from flask import Flask, jsonify, request, send_file
+from flask import Flask, jsonify, request
 from typing import List, Union
 import requests
 import faiss
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import FAISS
 from langchain.embeddings import OpenAIEmbeddings
-import pickle, os
+import pickle, os  # noqa: E401
 from langchain import OpenAI, LLMChain
 from langchain.prompts import Prompt
 from dotenv import load_dotenv
