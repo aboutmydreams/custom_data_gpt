@@ -567,7 +567,7 @@ python-versions = ">=3.8"
 
 [[package]]
 name = "openai"
-version = "0.27.2"
+version = "0.28.1"
 description = "Python client library for the OpenAI API"
 category = "main"
 optional = false
@@ -1090,7 +1090,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.10.0,<3.11"
-content-hash = "318bc1495af4635a861a1a4737541c431b744b9e9b48863ea8e74f58d2108713"
+content-hash = "be791e495c0ede1524227a1bc09fae5298426f8872c31ee537c5c1ce84a9cccb"
 
 [metadata.files]
 aiohttp = []
