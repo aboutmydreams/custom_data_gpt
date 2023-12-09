@@ -5,5 +5,5 @@ venv
 .DS_Store
 training/models/*
 training/facts/*
-prompt/user_prompt/*
+training/prompt/user_prompt/*
 test/user_test/*

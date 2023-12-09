@@ -5,7 +5,8 @@ import faiss
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import FAISS
 from langchain.embeddings import OpenAIEmbeddings
-import pickle, os  # noqa: E401
+import pickle
+import os  # noqa: E401
 from langchain import OpenAI, LLMChain
 from langchain.prompts import Prompt
 from dotenv import load_dotenv
@@ -62,7 +63,8 @@ def train():
                     # 如果训练数据是中文，则替换为英文
                     if "zh" in get_language_type(r.text):
                         en_content = translate(r.text)
-                        trainingData.append(en_content)  # 将获取到的文本数据添加到 trainingData 列表中
+                        # 将获取到的文本数据添加到 trainingData 列表中
+                        trainingData.append(en_content)
                     else:
                         trainingData.append(r.text)
         else:
@@ -141,7 +143,8 @@ def upload_prompt():
                 return jsonify({"code": 1, "msg": "file is not txt"}), 400
             r = requests.get(url)
             if r.status_code == 200:
-                file_save_path = "./training/prompt/{}".format(url.split("/")[-1])
+                file_save_path = "./training/prompt/{}".format(
+                    url.split("/")[-1])
                 with open(file_save_path, "w", encoding="utf-8") as data_file:
                     data_file.write(r.text)
                     data_file.close()
@@ -196,10 +199,12 @@ def chat():
         question = request.json["question"]
         history = request.json["history"]
         model_name = request.json["model_name"]
-        prompt_name = request.json["prompt_name"] if "prompt_name" in request.json.keys() else "master"
+        prompt_name = request.json["prompt_name"] if "prompt_name" in request.json.keys(
+        ) else "master"
 
         # 从文件中读取搜索引擎、向量空间等信息
-        index = faiss.read_index("./training/models/{}.index".format(space_name))
+        index = faiss.read_index(
+            "./training/models/{}.index".format(space_name))
         with open("./training/models/{}.pkl".format(space_name), "rb") as f:
             store = pickle.load(f)
         store.index = index
@@ -210,7 +215,8 @@ def chat():
 
         # 根据 prompt 模板、历史文本、问题，构建预测使用的 LLM 模型
         prompt = Prompt(
-            template=promptTemplate, input_variables=["history", "context", "question"]
+            template=promptTemplate, input_variables=[
+                "history", "context", "question"]
         )
 
         llmChain = LLMChain(

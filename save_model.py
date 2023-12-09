@@ -5,8 +5,7 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import FAISS
 from langchain.embeddings import OpenAIEmbeddings
 import pickle
-from langchain import OpenAI, LLMChain
-from langchain.prompts import Prompt
+
 
 #  pip install python-dotenv
 from dotenv import load_dotenv
